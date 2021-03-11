@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>My Food | Menu</title>
+</head>
+<body>
+<div class="container dark">
+    <nav class="navbar dark">
+        <div class="logo">
+            <a href="index.html"> <h3>Pasta<br> <span class="small">House</span></h3></a>
+            <h3><i class="fab fa-instagram"></i></h3>
+            <h3><i class="fab fa-facebook"></i></h3>
+        </div>
+        <div class="menu">
+        <ul class="main-menu">
+            <li><a href="index.html" class="small-menu">Home</a></li>
+            <li><a href="career.html" class="small-menu">Career</a></li>
+            <li><a href="#" class="contact" id="modal-btn" class="small-menu">Contact</a></li> 
+        </ul>
+       <li><a href="#" id="openup"><i class="fas fa-bars"></i></a></li>
+    </div>
+    </nav>
+    <section id="items">
+        <h3 class="menu-text">WHAT ARE YOU IN THE MOOD FOR TODAY?</h3>
+    </section>
+    <section id="menu-overview">
+        <div class="menu-container">
+        <div id="breakfast-container">
+            <div class="breakfast-header header" data-target=".breakfast-content"> 
+                <h1>Breakfast</h1><i class="fas fa-plus"></i></i>
+            </div>
+            <div class="breakfast-content">
+                <h4>Alpine breakfast</h4>
+                <p>Sausage with cheese, homemade bun, scrambled eggs with cheese, grilled mushrooms, sour cream, tomato</p>
+                <h4>Chicago fritters</h4>
+                <p>With prosciutto, pepperoni, feta cheese, muhumara sauce/ nutella</p>
+                <h4>Protein omelette</h4>
+                <p>Egg whites, almonds, walnuts, soy bean, bell peppers, zucchini, broccoli</p>
+                <h4>Paesano omelette</h4>
+                <p>Prosciutto, feta cheese, tomatoes</p>
+                <h4>French toasts</h4>
+                <p>Prosciutto, sour cream, red pepper and hazelnut cream with cheese</p>
+            </div>
+        </div>
+        <div id="pasta-container">
+            <div class="pasta-header header" data-target=".pasta-content"> 
+                <h1>Pasta</h1><i class="fas fa-plus"></i></i>
+            </div>
+            <div class="pasta-content">
+                <h4>Nduja and ricotta pasta</h4>
+                <p>Broccoli, olive oil, onion, parmesan</p>
+                <h4>Pasta with prawns</h4>
+                <p>Garlic, white wine, tomato sauce, spinach</p>
+                <h4>Pasta Arrabiata</h4>
+                <p>Spicey tomato sauce, garlic, parmesan, basil</p>
+                <h4>Canneloni with spinach and smoked chicken</h4>
+                <p>Gratin with tomato sauce, bechamel sauce, mozzarella and sliced almonds</p>
+            </div>
+        </div>
+        <div id="pizza-container">
+            <div class="pizza-header header" data-target=".pizza-content"> 
+                <h1>Pizza</h1><i class="fas fa-plus"></i></i>
+            </div>
+            <div class="pizza-content">
+                <h4>Bologna</h4>
+                <p>Ricotta, mozzarella, mortadella, pesto pistachio</p>
+                <h4>Nduja</h4>
+                <p>Cheese, nduja, mozzarella, tomato, red onion, black olives</p>
+                <h4>Bianka</h4>
+                <p>Carbonara sauce, spinach cream, zucchini, gorgonzola, crispy pancetta, fine herbs</p>
+                <h4>White and hot</h4>
+                <p>Spicy tomato, ham, kulen, pancetta, pork ribs, caramelized onions, cheddar</p>
+                <h4>Pepperoni</h4>
+                <p>Pepperoni, cheese</p>
+            </div>
+        </div>
+        <div id="sandwich-container">
+            <div class="sandwich-header header" data-target=".sandwich-content"> 
+                <h1>Sandwich</h1><i class="fas fa-plus"></i></i>
+            </div>
+            <div class="sandwich-content">
+                <h4>Croissant sandwich</h4>
+                <p>Virginia ham, camembert cheese, mixed salad</p>
+                <h4>Prosciutto and mozzarella baguette</h4>
+                <p>Pesto sauce, rocket, tomato, mixed salad</p>
+                <h4>Smoked salmon and avocado baguette</h4>
+                <p>Cream cheese with dill, cucumber, mixed salad</p>
+                <h4>Avocado royal toast</h4>
+                <p>Peperoni,scrumbled eggs,smocked cheese,tomato</p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container footer">
+            <ul>
+                <li>Contact Us On:</li>
+                <li>pastahouse@gmail.com</li>
+                <li>011/22 222 222</li>
+            </ul>
+            <ul>
+                <li>Follow Us On:</li>
+                <li><i class="fab fa-instagram"></i> @pasta_house</li>
+                <li><i class="fab fa-facebook"></i> /pasta_house</li>
+            </ul>
+            <ul>
+                <li>Address:</li>
+                <li>Belgrade</li>
+                <li><div id="map"></div></li>
+            </ul>
+        </div>
+    </footer>
+</div>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Contact</h2>
+        </div>
+        <div class="modal-body">
+            <form id="modal-form">
+                <p>
+                <label for="Name" class="fcf-label">Your name</label>
+                <br>
+                <input type="text" id="Name" name="Name" required>
+                </p>
+                <p>
+                <label for="Email" class="fcf-label">Your email address</label>
+                <br>
+                <input type="email" id="Email" name="Email" required>
+            </p>
+            <p>
+                <label for="Message" class="fcf-label">Your message</label>
+                <br>
+                <textarea id="Message" name="Message" rows="6" maxlength="3000" required></textarea>
+            </p>
+                <button type="submit" id="modal-button">Send Message</button>
+                
+        </div>
+        <div class="modal-footer">
+            <h3><i class="fab fa-instagram"></i>@pasta_house</h3>
+            <h3><i class="fab fa-facebook"></i>/pasta_house</h3>
+        </div>
+    </div>
+</div>
+<script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrN-k4-idY33J6iA14KWIJfxtDJmvy6_0&callback=initMap&libraries=&v=weekly"
+async
+></script>
+<script src="js/main-menu.js"></script>
+<script src="js/mapp.js"></script>
+</body>
+</html>

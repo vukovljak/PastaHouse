@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container dark">
+        <nav class="navbar dark">
+            <div class="logo">
+                <a href="index.html"> <h3>Pasta<br> <span class="small">House</span></h3></a>
+                <h3><i class="fab fa-instagram"></i></h3>
+                <h3><i class="fab fa-facebook"></i></h3>
+            </div>
+            <div class="menu">
+            <ul class="main-menu">
+                <li><a href="index.html" class="small-menu">Home</a></li>
+                <li><a href="menu.html" class="small-menu">Menu</a></li>
+                <li><a href="#" class="contact" id="modal-btn" class="small-menu">Contact</a></li> 
+            </ul>
+           <li><a href="#" id="openup"><i class="fas fa-bars"></i></a></li>
+        </div>
+        </nav>
+    
+    <section id="items">
+        <h3 class="menu-text">PASTA HOUSE TEAM</h3>
+    </section>
+    <section id="career">
+        <div class="career-container">
+            <p>If you are interested in becoming part of the Pasta House team, submit your CV through the online form below.</p>
+            <form>
+                <p>
+                    <label>Photo (required)
+                        <br>
+                        <input type="file" id="photo" name="file-866" size="40" class="form" accept=".jpg,.jpeg" aria-required="true" aria-invalid="false">
+                    </label>
+                </p>
+                <p>
+                    <label>Name (required)
+                        <br>
+                        <input type="text" name="your-name" value="" size="40" class="form" aria-required="true" aria-invalid="false">
+                    </label>
+                </p>
+                <p>
+                    <label>Surname (required)
+                        <br>
+                        <input type="text" name="your-name" value="" size="40" class="form" aria-required="true" aria-invalid="false">
+                    </label>
+                </p>
+                <p>
+                    <label>Date of Birth (required)
+                        <br>
+                        <input type="date" name="date-108" value="" class="form" aria-required="true" aria-invalid="false">
+                    </label>
+                </p>
+                <p>
+                    <label>Email: (required)
+                        <br>
+                        <input type="email" name="your-email" value="" size="40" class="form" aria-required="true" aria-invalid="false">
+                    </label>
+                </p>
+                <p>
+                    <label>Resume: (required)
+                        <br>
+                        <input type="file" name="file-866" size="40" class="form" aria-required="true" aria-invalid="false">
+                    </label>
+                </p>
+                <p class="error"></p>
+                <input type="submit" id="formSubmit" value="Send" class="btn-menu block" aria-invalid="false">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container footer">
+            <ul>
+                <li>Contact Us On:</li>
+                <li>pastahouse@gmail.com</li>
+                <li>011/22 222 222</li>
+            </ul>
+            <ul>
+                <li>Follow Us On:</li>
+                <li><i class="fab fa-instagram"></i> @pasta_house</li>
+                <li><i class="fab fa-facebook"></i> /pasta_house</li>
+            </ul>
+            <ul>
+                <li>Address:</li>
+                <li>Belgrade</li>
+                <li><div id="map"></div></li>
+            </ul>
+        
+    </footer>
+</div>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Contact</h2>
+        </div>
+        <div class="modal-body">
+            <form id="modal-form">
+                <p>
+                <label for="Name" class="fcf-label">Your name</label>
+                <br>
+                <input type="text" id="Name" name="Name" required>
+                </p>
+                <p>
+                <label for="Email" class="fcf-label">Your email address</label>
+                <br>
+                <input type="email" id="Email" name="Email" required>
+            </p>
+            <p>
+                <label for="Message" class="fcf-label">Your message</label>
+                <br>
+                <textarea id="Message" name="Message" rows="6" maxlength="3000" required></textarea>
+            </p>
+                <button type="submit" id="modal-button">Send Message</button>
+                
+        </div>
+        <div class="modal-footer">
+            <h3><i class="fab fa-instagram"></i>@pasta_house</h3>
+            <h3><i class="fab fa-facebook"></i>/pasta_house</h3>
+        </div>
+    </div>
+</div>
+<script src="js/main-career.js"></script>
+    <script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrN-k4-idY33J6iA14KWIJfxtDJmvy6_0&callback=initMap&libraries=&v=weekly"
+async
+></script>
+
+<script src="js/mapp.js"></script>
+</body>
+</html>
